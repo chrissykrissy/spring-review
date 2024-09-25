@@ -2,7 +2,6 @@ package hello.hello_spring.service;
 
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
-import hello.hello_spring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -34,7 +33,7 @@ public class MemberService {
      * 전체 회원 조회
      */
 
-    public List<Member> findMember(){
+    public List<Member> findMembers(){
         return memberRepository.findAll();
     }
 
